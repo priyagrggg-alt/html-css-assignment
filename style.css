@@ -1,0 +1,464 @@
+
+
+* {
+    box-sizing: border-box;
+}
+.logo {
+    text-align: center;
+    color: #176b2c;
+    width: 100%;
+    
+}
+
+.logo h1 {
+    margin: 20px 0;
+}
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #095f22;
+}
+
+
+.gallery {
+    padding: 50px;
+    text-align: center;
+    background-color: white;
+}
+
+.gallery-images {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+
+    max-width: 1000px;
+    margin: 30px auto;
+}
+
+.gallery-images img {
+    width: 100%;
+    height: 200px;
+
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.gallery-images img:hover {
+    transform: scale(1.03);
+}
+
+
+.navbar {
+    background-color: #1f5c2e;
+    padding: 20px;
+    
+}
+
+
+/* Navigation Links */
+
+.nav-links {
+    display: flex;
+    justify-content: center;
+    gap: 45px;
+
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+.nav-links a {
+    color: rgb(69, 163, 45);
+    text-decoration: none;
+    font-size: 17px;
+
+    padding: 8px 12px;
+}
+
+
+/* Navigation Hover */
+
+.nav-links a:hover {
+    background-color: white;
+    color: #1f5c2e;
+
+    border-radius: 5px;
+}
+
+
+
+
+.home {
+    background-color: #dcebdd;
+
+    text-align: center;
+
+    padding: 70px 20px;
+}
+
+
+.home h1 {
+    color: #1f5c2e;
+    font-size: 42px;
+
+    margin-bottom: 15px;
+}
+
+
+.home p {
+    font-size: 18px;
+}
+
+
+
+
+.about {
+    background-color: white;
+
+    text-align: center;
+
+    padding: 45px 20px;
+}
+
+
+.about p {
+    font-size: 17px;
+}
+
+/* SERVICES */
+
+.services {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #f4f4f4;
+}
+
+.services h2 {
+    color: #1f5c2e;
+    font-size: 30px;
+}
+
+.service-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+
+    margin-top: 30px;
+}
+
+.service-box {
+    background-color: white;
+
+    width: 220px;
+    padding: 20px;
+
+    border-radius: 8px;
+
+    box-shadow: 0 2px 8px #cccccc;
+}
+
+.service-box h3 {
+    color: #1f5c2e;
+}
+
+.service-box:hover {
+    transform: translateY(-5px);
+}
+
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+
+    .service-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
+
+.places {
+    background-color: #f4f4f4;
+
+    padding: 60px 8%;
+}
+
+
+.places h2 {
+    text-align: center;
+
+    color: #1f5c2e;
+
+    font-size: 32px;
+
+    margin-bottom: 35px;
+}
+
+
+
+
+.cards {
+    display: grid;
+
+    /* 3 cards per row */
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+
+    max-width: 1100px;
+
+    margin: auto;
+}
+
+
+
+.card {
+    background-color: white;
+
+    border-radius: 10px;
+
+    overflow: hidden;
+
+    box-shadow: 0 3px 10px #cccccc;
+
+    text-align: left;
+
+    transition: 0.3s;
+
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* Card Image */
+
+.card img {
+    width: 100%;
+    height: 200px;
+
+    object-fit: cover;
+}
+
+
+/* Card Title */
+
+.card h3 {
+    color: #1f5c2e;
+
+    font-size: 23px;
+
+    margin: 18px 18px 8px;
+}
+
+
+/* Card Paragraph */
+
+.card p {
+    margin: 5px 18px;
+
+    line-height: 1.5;
+
+    font-size: 15px;
+}
+
+
+
+
+.card a {
+    background-color: #72c491;
+
+    color: white;
+
+    text-decoration: none;
+
+    text-align: center;
+
+    padding: 10px 18px;
+
+    margin: 15px 18px 20px;
+
+    width: fit-content;
+
+    border-radius: 5px;
+}
+
+
+/* Button Hover */
+
+.card a:hover {
+    background-color: #1f5c2e;
+}
+
+
+
+
+.card:hover {
+    transform: translateY(-7px);
+
+    box-shadow: 0 7px 18px #aaaaaa;
+}
+
+
+
+
+.simple {
+    background-color: #c7e6d0;
+
+    text-align: center;
+
+    padding: 60px 20px;
+
+    margin: 30px 8%;
+}
+
+
+.simple h2 {
+    color: #1f5c2e;
+
+    font-size: 28px;
+}
+
+
+
+
+.contact {
+    background-color: #f4f4f4;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.contact h2 {
+    color: #1f5c2e;
+    font-size: 30px;
+}
+
+.contact p {
+    margin-bottom: 25px;
+}
+
+
+/* Contact Form */
+
+.contact-form {
+    max-width: 500px;
+    margin: auto;
+
+    display: flex;
+    flex-direction: column;
+
+    text-align: left;
+}
+
+
+/* Labels */
+
+.contact-form label {
+    margin-top: 15px;
+    margin-bottom: 5px;
+
+    font-weight: bold;
+}
+
+
+/* Input and Message Box */
+
+.contact-form input,
+.contact-form textarea {
+    padding: 12px;
+
+    border: 1px solid #ccc;
+    border-radius: 5px;
+
+    font-size: 15px;
+}
+
+
+/* Message Box */
+
+.contact-form textarea {
+    height: 120px;
+}
+
+
+/* Send Button */
+
+.contact-form button {
+    background-color: #1f5c2e;
+    color: white;
+
+    border: none;
+    border-radius: 5px;
+
+    padding: 12px;
+
+    margin-top: 20px;
+
+    cursor: pointer;
+}
+
+
+/* Button Hover */
+
+.contact-form button:hover {
+    background-color: #43892b;
+}
+
+footer {
+    background-color: #1f5c2e;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 25px;
+}
+
+
+
+@media (max-width: 900px) {
+
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+
+
+@media (max-width: 600px) {
+
+    /* Navigation becomes vertical */
+
+    .nav-links {
+        flex-direction: column;
+
+        text-align: center;
+
+        gap: 10px;
+    }
+
+
+    /* Smaller heading */
+
+    .home h1 {
+        font-size: 32px;
+    }
+
+
+    /* Less space */
+
+    .places {
+        padding: 30px 20px;
+    }
+
+
+    /* One card per row */
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+}
